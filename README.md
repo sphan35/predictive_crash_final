@@ -4,15 +4,16 @@
 
 ## Week 1
 
-# Technologies Used
+## Technologies Used
+
 ## Data Cleaning and Analysis
-Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+For the data cleaning and analysis we will be using Pandas, NumPy, and Python.
 
 ## Database Storage
-Mongo is the database we intend to use, and we will integrate Flask to display the data.
+The database will be hosted on Postgres, and we will integrate Tableau to visualize our data.
 
 ## Machine Learning
-SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+We will utilize the Python machine learning library SciKitLearn to create a model. We will accomplish this by training our model with three subsets: 70% training set, 15% validation set, and 15% test set. 
 
 ## Dashboard
-In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
+We will host our dashboard using Tableau Public.
