@@ -1,4 +1,4 @@
-# predictive_crash_final: # Dylan Kurth's role as X
+# predictive_crash_final: Dylan Kurth's role as X
 
 ## Select Topic
 
@@ -54,7 +54,7 @@
 
 - We will host our dashboard using Tableau Public.
 
-# predictive_crash_final:Jason Ramirez role as Triangle 
+# predictive_crash_final: Jason Ramirez role as Triangle 
 
 ## Caveat 
 
