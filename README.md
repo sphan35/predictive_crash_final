@@ -72,4 +72,3 @@ With the limited number of cases and further scrutiny needed in feature choice, 
 ## Model Notes 
 
 The basis of the logistic regression model is the sigmoid curve, which is used to produce the probability (between 0 and 1) of the input data belonging to the first group. Specifically, logistic regression predicts the probability of the input data belonging to one of two groups using a combination of input variables. If the probability is above a predetermined cutoff, the sample is assigned to the first group, otherwise it is assigned to the second.   
-
