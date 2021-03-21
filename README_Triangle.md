@@ -10,8 +10,12 @@ That said, it is possible that the number of data points and features will incre
 
 ## Model Training
 
-With our logistic regression model, there is less preprocessing or scaling required for the data. Several variables required encoding to correct errors, such as days of the week, crash date, and crash time. Also, several variables were change to binary dummy variables (1, 0) that were formally Y/N. 
+With our logistic regression model, there is less preprocessing or scaling required for the data. Several variables required encoding to correct errors, such as days of the week, crash date, and crash time. Also, several variables were change to binary dummy variables (1, 0) that were formally Y/N. Finally, the output, severe crash, was recoded into binary form (1, 0) from 5 options.  
 
 ## Model Accuracy 
 
-With the limited number of cases and further scrutiny needed in feature choice, the model accuracy in the initial run was 99 percent. The model needs revisited. There was a note that the lbfgs algorithm failed to converge. Additional cases are needed and feature choice researched.  
+With the limited number of cases and further scrutiny needed in feature choice, the model accuracy in the initial run was 99 percent. The model needs revisited. There was a note that the lbfgs algorithm failed to converge. Additional cases are needed and feature choice researched. 
+
+## Model Notes 
+
+The basis of the logistic regression model is the sigmoid curve, which is used to produce the probability (between 0 and 1) of the input data belonging to the first group. Specifically, logistic regression predicts the probability of the input data belonging to one of two groups using a combination of input variables. If the probability is above a predetermined cutoff, the sample is assigned to the first group, otherwise it is assigned to the second.  
