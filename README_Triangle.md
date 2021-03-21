@@ -14,7 +14,7 @@ That said, it is possible that the number of data points and features will incre
 
 ## Model Training
 
-With our logistic regression model, there is less preprocessing or scaling required for the data. Several variables required encoding to correct errors, such as days of the week, crash date, and crash time. Also, several variables were change to binary dummy variables (1, 0) that were formally Y/N. Finally, the output, severe crash, was recoded into binary form (1, 0) from 5 options.  
+With our logistic regression model, there is less preprocessing or scaling required for the data. Several variables required encoding to correct errors, such as days of the week, crash date, and crash time. Also, several variables were change to binary dummy variables (1, 0) that were formally Y/N. Finally, the output, severe crash (**Crash_Sev_ID_Bin**), was recoded into binary form (1, 0) from 5 options.  
 
 ## Model Accuracy 
 
