@@ -1,16 +1,24 @@
-# predictive_crash_final: Dylan Kurth's role as X
+# predictive_crash_final
 
-## Select Topic
+## Introducing the Team
 
-- Crash Data Analysis
+- Dylan Kurth
+- Houssam Ghandour
+- Jason Ramirez
+- Sean Phan
 
-### Reason why we selected topic
+# Overview 
+- The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and the machine learning approach of Logistic regression to analyze the data. The results will be represented using Tableau. 
 
-- To visualize and predict car accident data in Texas
+### Purpose
 
-### Description of source of data
+- Our team seeks to improve the safety of Texas roadways by using this data to identify crash patterns and the risk factors associated with them.
 
-- The source data was pulled from the Texas Department of Transportation
+### Source of data
+
+- The crash data is pulled from the Texas Department of Transportation Crash Records Information System (CRIS).
+- The crash data was downloaded from the years 2015-2019.
+- The Roadway Inventory Data was downloaded from the Texas Department of Transportation Open GIS Records. 
 
 ### Questions we want to answer with our data
 
@@ -34,32 +42,24 @@
 
 - Which highway had the highest crash rates? 
 
-## Technologies used for project
+## Technologies 
 
-## Week 1
+- Data Cleaning and Analysis: For the data cleaning and analysis we will be using Python (Pandas, NumPy, Sklearn).
 
-### Data Cleaning and Analysis
+- Database Storage: The database will be hosted on Postgres, and we will integrate Tableau to visualize our data.
 
-- For the data cleaning and analysis we will be using Pandas, NumPy, and Python.
+- Machine Learning: We will utilize the Python machine learning library Sklearn to create a model. We will accomplish this by training our model with three subsets: training set, validation set, and test set. We will use classification model.
 
-### Database Storage
+- Dashboard: We will host our dashboard using Tableau Public.
 
-- The database will be hosted on Postgres, and we will integrate Tableau to visualize our data.
+# Database Storage
 
-### Machine Learning
+- For the database we will be using Postgres, SQL, and SQLAlchemy to connect the database for storing the crash and roadway data.
 
-- We will utilize the Python machine learning library SciKitLearn to create a model. We will accomplish this by training our model with three subsets: 70% training set, 15% validation set, and 15% test set. We will use classification model.
+- Caveat: Project data collection and clean up has been completed. Final data are in .csv format. The team ran into complications importing the data into a PostGres SQL database. We are still receiving errors in uploads. As a result, reading in data from the provisional database has been delayed. Initial development of the following simple model, soon to be enhanced, was based on .csv files and will soon be transferred to the source database.
 
-### Dashboard
+# Machine Learning
 
-- We will host our dashboard using Tableau Public.
-
-# predictive_crash_final: Jason Ramirez role as Triangle 
-
-## Caveat 
-
-**Project data collection and clean up has been completed. Final data are in .csv format. The team ran into complications importing the data into a PostGres SQL database. We are still receiving errors in uploads. As a result, reading in data from the provisional database has been delayed. Initial development of the following simple model, soon to be enhanced, was based on .csv files and will soon be transferred to the source database.**
- 
 ## Model Choice
 
 The initial approach for predicting the severity of crashes in Fort Bend County, Texas will be a logistic regression model. Specifically, the logistic regression model will be used to produce the probability of crashed resulting in an incapacitating injury, including death. 
