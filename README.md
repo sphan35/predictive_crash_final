@@ -1,45 +1,37 @@
-# predictive_crash_final
+# Predictive_Crash_Analysis
 
 ## Introducing the Team
 
-- Dylan Kurth
-- Houssam Ghandour
-- Jason Ramirez
-- Sean Phan
+- Dylan Kurth (Role X)
+- Houssam Ghandour (Role Circle)
+- Jason Ramirez (Role Triangle)
+- Sean Phan (Role Square)
 
 # Overview 
-- The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and the machine learning approach of Logistic regression to analyze the data. The results will be represented using Tableau. 
 
-### Purpose
+The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and the machine learning approach of Logistic regression to analyze the data. The results will be represented using Tableau. 
 
-- Our team seeks to improve the safety of Texas roadways by using this data to identify crash patterns and the risk factors associated with them.
+## Purpose
 
-### Source of data
+Our team seeks to improve the safety of Texas roadways by using this data to identify crash patterns and the risk factors associated with them.
+
+## Data Sources
 
 - The crash data is pulled from the Texas Department of Transportation Crash Records Information System (CRIS).
 - The crash data was downloaded from the years 2015-2019.
 - The Roadway Inventory Data was downloaded from the Texas Department of Transportation Open GIS Records. 
 
-### Questions we want to answer with our data
+## Questions we want to answer
 
 - Fatalities during time of day... When are the most dangerous times to be driving?
-
 - What conditions/risk factors lead to more crashes?
-
 - What conditions/risk factors lead to more server crashes?
-
 - What Highways have the most crashes?
-
 - What is the most deadly highway in Texas?
-
 - How many deaths on Texas highways in 2021?
-
 - What type of vehicle is more likely involved in crash?
-
 - What type of vehicle is the safest?
-
 - Where are traffic accidents increasing?
-
 - Which highway had the highest crash rates? 
 
 ## Technologies 
