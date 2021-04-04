@@ -11,6 +11,14 @@
 
 The team is utilizing zoom for our meetings to go over the project and Slack as the main form of communication. During these meeting we discuss the necessary tasks and objectives to accomplish each week in order to have the necessary cohension for a successfull project. 
 
+## Link to Presentation Slides 
+
+- https://docs.google.com/presentation/d/15xzNxXrcW3W_DVtDcuPw3wsibmkmomp2nanFLIcRt20/edit?usp=sharing
+
+## Link to Dashboard Slides
+
+- https://docs.google.com/presentation/d/1bh6axnxcHTXwbCVjv8SMjqfk6BLI2NLZsXdgEBi8vsM/edit?usp=sharing
+
 # Overview 
 
 The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and the machine learning approach of Logistic regression to analyze the data. The results will be represented using Tableau. 
