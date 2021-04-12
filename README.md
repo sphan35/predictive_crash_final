@@ -2,10 +2,18 @@
 
 ## Introducing the Team
 
-- Houssam Ghandour
 - Dylan Kurth
-- Sean Phan
+- Houssam Ghandour
 - Jason Ramirez
+- Sean Phan
+
+## Link to Presentation Slides 
+
+- https://docs.google.com/presentation/d/15xzNxXrcW3W_DVtDcuPw3wsibmkmomp2nanFLIcRt20/edit?usp=sharing
+
+## Link to Dashboard
+
+- https://public.tableau.com/profile/houssam.ghandour#!/vizhome/TravisCountyCrashAnalysis/TravisCountyCrashAnalysis?publish=yes
 
 # Overview 
 
@@ -24,13 +32,9 @@ Our team seeks to improve the safety of Texas roadways by using this data to ide
 ## Questions we want to answer
 
 - Fatalities during time of day... When are the most dangerous times to be driving?
-- What conditions/risk factors lead to more crashes?
-- What conditions/risk factors lead to more server crashes?
+- What conditions/risk factors lead to more severe crashes?
 - What Highways have the most crashes?
-- What is the most deadly highway in Texas?
-- How many deaths on Texas highways in 2021?
-- What type of vehicle is more likely involved in crash?
-- What type of vehicle is the safest?
+- What is the most deadly highway in Travis County?
 - Where are traffic accidents increasing?
 - Which highway had the highest crash rates? 
 
@@ -92,4 +96,5 @@ To help determine the effectiveness of the model, the source data was split into
 The Python Pandas Scikit-learn train_test_split module was employed to split the data, namely to create (a) training data sets consisting of explanatory and outcome variables, and (b) testing data sets consisting of explanatory and outcome variables. In this process, specific cases were assigned to specific data sets – based on coded instruction – so that the model could be replicated consistently. In addition, the data sets were stratified. This process ensured that when the data were split, similar proportions belonged to each group so that results will not be skewed toward the training or testing sides. The Scikit-learn library was also used to define and train the model. 
 
 Based on a comparison one predicted to actual values yielded an accuracy score of .65, or 65 percent. 
+
 
