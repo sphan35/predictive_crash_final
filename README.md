@@ -15,8 +15,6 @@
 
 - https://public.tableau.com/profile/houssam.ghandour#!/vizhome/TravisCountyCrashAnalysis/TravisCountyCrashAnalysis?publish=yes
 
-- https://docs.google.com/presentation/d/1bh6axnxcHTXwbCVjv8SMjqfk6BLI2NLZsXdgEBi8vsM/edit?usp=sharing
-
 # Overview 
 
 The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and the machine learning approach of Logistic regression to analyze the data. The results will be represented using Tableau. 
