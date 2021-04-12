@@ -11,7 +11,9 @@
 
 - https://docs.google.com/presentation/d/15xzNxXrcW3W_DVtDcuPw3wsibmkmomp2nanFLIcRt20/edit?usp=sharing
 
-## Link to Dashboard Slides
+## Link to Dashboard
+
+- https://public.tableau.com/profile/houssam.ghandour#!/vizhome/TravisCountyCrashAnalysis/TravisCountyCrashAnalysis?publish=yes
 
 - https://docs.google.com/presentation/d/1bh6axnxcHTXwbCVjv8SMjqfk6BLI2NLZsXdgEBi8vsM/edit?usp=sharing
 
