@@ -7,10 +7,6 @@
 - Jason Ramirez (Role Triangle)
 - Sean Phan (Role Square)
 
-## Communication Tools
-
-The team is utilizing zoom for our meetings to go over the project and Slack as the main form of communication. During these meeting we discuss the necessary tasks and objectives to accomplish each week in order to have the necessary cohension for a successfull project. 
-
 ## Link to Presentation Slides 
 
 - https://docs.google.com/presentation/d/15xzNxXrcW3W_DVtDcuPw3wsibmkmomp2nanFLIcRt20/edit?usp=sharing
