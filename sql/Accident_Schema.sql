@@ -132,3 +132,10 @@ REFERENCES "Accident" ("Crash_ID");
 
 ALTER TABLE "Accident_Conditions" ADD CONSTRAINT "fk_Accident_Conditions_Crash_ID" FOREIGN KEY("Crash_ID")
 REFERENCES "Accident" ("Crash_ID");
+
+SELECT accident.Crash_ID,
+accident.Crash_Date,
+accident_conditions.Crash_ID,
+accident_conditions.Crash_Speed_Limit
+FROM "Accident"
+INNER JOIN "Accident_Conditions" ON "Accident" = "Accident_Conditions";
