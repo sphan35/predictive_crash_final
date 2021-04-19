@@ -114,6 +114,10 @@ Based on a comparison of actual vs predicted severe crashes, the modele yielded 
 
 ![](machine_learning/images/Random_Forest_feature_importance.png)
 
+One of our visualizations in the dashboard shown below confirms the relevancy of crash time and crash date variables related to crash severity. It can be shown that most severe crashes during early morning hours, especially on the weekends where parties and alcohol might be of influence. 
+
+![](Dashboard/Images/CrashesByDayByTime.png)
+
 # Recommandations
 
 - Capture more variables potentially from census (income group, car information)
