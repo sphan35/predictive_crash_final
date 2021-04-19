@@ -87,7 +87,7 @@ Controlling for missing data, 29 variables that may influence the severity of a 
 
 The relationships between features was reviewed, with the correlation matrix listed below. Feature adjustment is being considered based on these results. 
 
-![predictive_crash_final](/correlation_matrix.png).
+![](machine_learning/images/correlation_matrix.png)
  
 ## Model Training
 
