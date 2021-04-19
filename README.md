@@ -17,44 +17,55 @@
 
 # Overview 
 
-The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and a random forest machine learning approach to analyze the data. The results will be represented using Tableau. 
+The purpose of this project is to predict the crash severity based on a roadway and traffic risk factors. Our team decided to use Python, SQL Database, and  balanced random forest and Ensemble Adapative Boosting machine learning approaches to analyze the data. The visualizations are represented using Tableau. 
 
 ## Purpose
 
-Our team seeks to improve the safety of Texas roadways by using this data to identify crash patterns and the risk factors associated with them.
+Our team seeks to improve the safety of Travis County roadways by using the data collected to identify crash patterns and the risk factors associated with crash severity.
 
 ## Data Sources
 
 - The crash data is pulled from the Texas Department of Transportation Crash Records Information System (CRIS).
-- The crash data was downloaded from the years 2015-2019.
+- The crash data was downloaded from the years 2015-2020.
 - The Roadway Inventory Data was downloaded from the Texas Department of Transportation Open GIS Records. 
 
 ## Questions we want to answer
 
-- Fatalities during time of day... When are the most dangerous times to be driving?
-- What conditions/risk factors lead to more severe crashes?
-- What Highways have the most crashes?
-- What is the most deadly highway in Travis County?
-- Where are traffic accidents increasing?
-- Which highway had the highest crash rates? 
+- Can we predict the severity of a collision based on road and traffic risk factors?
+
+- What risk factors lead to more severe crashes?
+
+- With more traffic and crashes, do we expect more or less severe crashes?
+
 
 ## Technologies 
 
-- Data Cleaning and Analysis: For the data cleaning and analysis we will be using Python (Pandas, NumPy, Sklearn).
+- Data Cleaning and Analysis: For the data cleaning and analysis we used Python (Pandas, NumPy, Sklearn).
 
-- Database Storage: The database will be hosted on Postgres, and we will integrate Tableau to visualize our data.
+- Database Storage: The database was hosted on Postgres, and is integrated on Tableau to visualize our data.
 
-- Machine Learning: We will utilize the Python machine learning library Sklearn to create a model. We will accomplish this by training our model with three subsets: training set, validation set, and test set. We will use a classification model.
+- Machine Learning: We utilized the Python machine learning library Sklearn to create a model. 
 
-- Dashboard: We will host our dashboard using Tableau Public.
+- Dashboard: We hosted our dashboard using Tableau Public.
 
 # Database Storage
 
-- For the database we will be using Postgres, SQL, and SQLAlchemy to connect the database for storing the crash and roadway data.
+- For the database we used PostgresSQL and SQLAlchemy to connect the database for storing the crash and roadway data.
 
-- Caveat: Project data collection and clean up has been completed. Final data are in .csv format. The team ran into complications importing the data into a PostGres SQL database. We are still receiving errors in uploads. As a result, reading in data from the provisional database has been delayed. Initial development of the following simple model, soon to be enhanced, was based on .csv files and will soon be transferred to the source database.
+- Connected Database to the Machine Learning Model: Project data collection and clean up has been completed. Final data are in .csv format.
 
-![](sql/pictures/ERD.png)
+- The Entity Relationship Diagram image below shows the variables chosen for further analysis.
+
+![](sql/images/ERD.png)
+
+# Exploratory Analysis
+
+- Revised and selected variables based on correlation & relevancy compared with the crash severity data.
+
+- The relationships between features was reviewed, with the correlation matrix listed below.  
+
+![](machine_learning/images/correlation_matrix.png)
+
 
 # Machine Learning
 
@@ -85,18 +96,31 @@ Finally, scaling techniques were applied to explanatory features to account for 
 
 The source data set had few cases for which variable information was missing. As such, rows with missing data were removed from initial prediction attempts. Relatedly, the source data also included several fields with missing data, which were removed from the model.  
 
-Controlling for missing data, 29 variables that may influence the severity of a crash were analyzed. Variables were chosen based participant experience working with these data. In addition, the data are from an established and well used data set, suggesting validity. The features were as follows: roadway speed limit, time of crash, day of crash, crash date, weather condition, light condition, road surface, existing traffic signals, city limit boundary, lane shoulder width, median width, number of lanes, average daily traffic, average daily truck traffic, vehicle direction, pedestrian involvement, lane departure status, intersection status, crash speed, curve length, road function, and location on road
+Controlling for missing data, 29 variables that may influence the severity of a crash were analyzed. Variables were chosen based participant experience working with these data. In addition, the data are from an established and well used data set, suggesting validity. The features were as follows: roadway speed limit, time of crash, day of crash, crash date, weather condition, light condition, road surface, existing traffic signals, city limit boundary, lane shoulder width, median width, number of lanes, average daily traffic, average daily truck traffic, vehicle direction, pedestrian involvement, lane departure status, intersection status, crash speed, curve length, road function, and location on road.
 
-The relationships between features was reviewed, with the correlation matrix listed below. Feature adjustment is being considered based on these results. 
 
-![](machine_learning/images/correlation_matrix.png)
+The image show below are the severe crash variables that we narrowed down as most relevant for the machine learning models. 
+
+![](machine_learning/images/severe_crash_factors.png)
  
-## Model Training
+## Model Results
 
 To help determine the effectiveness of the model, the source data was split into training and testing datasets. The training data sets allow the model to learn about the data, whereas the testing data sets assess the performance of the training.   
 
 The Python Pandas Scikit-learn train_test_split module was employed to split the data, namely to create (a) training data sets consisting of explanatory and outcome variables, and (b) testing data sets consisting of explanatory and outcome variables. In this process, specific cases were assigned to specific data sets – based on coded instruction – so that the model could be replicated consistently. In addition, the data sets were stratified. This process ensured that when the data were split, similar proportions belonged to each group so that results will not be skewed toward the training or testing sides. The Scikit-learn library was also used to define and train the model. 
 
-Based on a comparison one predicted to actual values yielded an accuracy score of .65, or 65 percent. 
+Based on a comparison of actual vs predicted severe crashes, the modele yielded an accuracy score of .65, or 65 percent. In addition, the random forest model forest provided a feature importance score as shown below.
+
+
+![](machine_learning/images/Random_Forest_feature_importance.png)
+
+# Recommandations
+
+- Capture more variables potentially from census (income group, car information)
+
+- Try other machine learning models (e.g., Neural Network) to achieve better results
+
+- Predict fatal crashes rather than all severe crashes
+
 
 
