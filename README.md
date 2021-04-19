@@ -54,6 +54,8 @@ Our team seeks to improve the safety of Texas roadways by using this data to ide
 
 - Caveat: Project data collection and clean up has been completed. Final data are in .csv format. The team ran into complications importing the data into a PostGres SQL database. We are still receiving errors in uploads. As a result, reading in data from the provisional database has been delayed. Initial development of the following simple model, soon to be enhanced, was based on .csv files and will soon be transferred to the source database.
 
+![](sql/pictures/ERD.png)
+
 # Machine Learning
 
 ## Model Choice
